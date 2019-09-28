@@ -1,3 +1,7 @@
+## One command Moon deploy to local Minikube on Windows Hyper-V VM
+
+Just run moon.bat from command prompt with administrator permissions.
+
 ```
 C:\Users\user>moon.bat
 Creating working directory C:\Users\user\moon...
