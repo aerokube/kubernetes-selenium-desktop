@@ -59,10 +59,6 @@ spec:
     - host: moon.aerokube.local
       http:
         paths:
-          - path: /wd/hub
-            backend:
-              serviceName: moon
-              servicePort: 4444
           - path: /
             backend:
               serviceName: moon
