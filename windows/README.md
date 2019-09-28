@@ -1,7 +1,20 @@
 ## One command Moon deploy to local Minikube on Windows Hyper-V VM
 
-Just run moon.bat from command prompt with administrator permissions.
+Enable Hyper-V in PowerShell with administrator permissions:
+```
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+```
 
+Run the following from command prompt with administrator permissions:
+```
+C:\Windows\system32>cd %USERPROFILE%
+```
+```
+C:\Users\user>curl -Lo moon.bat https://raw.githubusercontent.com/aandryashin/moon-k8s/master/windows/moon.bat
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1824  100  1824    0     0   1824      0  0:00:01 --:--:--  0:00:01  3334
+```
 ```
 C:\Users\user>moon.bat
 Creating working directory C:\Users\user\moon...
