@@ -1,17 +1,19 @@
 @echo off
+pushd .
 echo Removing Minikube...
-minikube delete
+cd %USERPROFILE%\moon
+minikube delete -p moon
 
 echo Removing Virtual Swich...
 PowerShell -Command Remove-VMSwitch MoonSwitch -Force
+echo.
 
 echo Removing moon.aerokube.local from /etc/hosts...
 type C:\Windows\System32\Drivers\etc\hosts | findstr /v moon.aerokube.local >etc_hosts.tmp
-move /Y etc_hosts.tmp C:\Windows\System32\Drivers\etc\hosts
+copy etc_hosts.tmp C:\Windows\System32\Drivers\etc\hosts >nul
 del etc_hosts.tmp
 
-echo Removing directories...
-rmdir /S /Q %USERPROFILE%\.minikube
-rmdir /S /Q %USERPROFILE%\.kube
-rmdir /S /Q k8s
+popd
+
+rmdir /S /Q %USERPROFILE%\moon
 
