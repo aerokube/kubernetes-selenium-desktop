@@ -6,10 +6,10 @@ This repository contains one-command automation scripts allowing to quickly depl
 
 On Windows we are using a [Hyper-V](https://en.wikipedia.org/wiki/Hyper-V) virtual machine to start [Minikube](https://github.com/kubernetes/minikube) and deploy Moon.
 
-1) Open [PowerShell](https://en.wikipedia.org/wiki/PowerShell) with administrator permissions. 
+1) Open Windows command-line with administrator permissions. 
 2) Enable Hyper-V:
 ```
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+C:\Windows\system32>DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 ```
 
 3) Download and run installation script:
