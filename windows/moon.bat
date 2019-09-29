@@ -6,7 +6,7 @@ pushd .
 cd %USERPROFILE%\moon
 
 echo Downloading Moon Deploy...
-curl -LO https://raw.githubusercontent.com/aandryashin/moon-k8s/master/moon.yaml
+curl -LO https://raw.githubusercontent.com/aerokube/kubernetes-selenium-desktop/master/moon.yaml
 
 echo Downdoading kubectl...
 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/windows/amd64/kubectl.exe
