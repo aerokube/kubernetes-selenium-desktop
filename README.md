@@ -76,6 +76,13 @@ Waiting for deployment "moon" rollout to finish: 1 of 2 updated replicas are ava
 deployment "moon" successfully rolled out
 Exposing Moon Service...
 service/moon patched
+
+Access Moon Web Interface at: http://moon.aerokube.local
+Run Tests against: http://moon.aerokube.local:4444/wd/hub
+
+Create session with:
+curl http://moon.aerokube.local:4444/wd/hub/session -d"{\"desiredCapabilities\":{\"browserName\":\"chrome\", \"enableVNC\":true}}"
+
 ```
 
 4) Access Moon Web Interface at: `http://moon.aerokube.local`. Use the following Selenium URL to run your tests: `http://moon.aerokube.local:4444/wd/hub`.
