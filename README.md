@@ -1,6 +1,6 @@
 # Kubernetes Selenium on Desktop
 
-This repository contains one-command automation scripts allowing to quickly deploy [Moon](https://aerokube.com/moon/) - Selenium browser automation solution running in [Kubernetes](https://kubernetes.io/) cluster.
+This repository contains one-command automation scripts allowing to quickly deploy [Moon](https://aerokube.com/moon/) - Selenium browser automation solution running in [Kubernetes](https://kubernetes.io/) cluster. **Resulting Moon installation is completely free and does not require a paid license.**
 
 ## One-command Deployment on Windows
 
