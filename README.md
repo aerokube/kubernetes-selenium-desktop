@@ -93,7 +93,7 @@ $ curl http://moon.aerokube.local:4444/wd/hub/session -d"{\"desiredCapabilities\
 6) **Optional.** To completely remove Moon - run removal script:
 ```
 C:\Windows\system32>cd %USERPROFILE%
-C:\Users\user>curl -Lo moon.bat https://raw.githubusercontent.com/aerokube/kubernetes-selenium-desktop/master/windows/delete-moon.bat
+C:\Users\user>curl -Lo delete-moon.bat https://raw.githubusercontent.com/aerokube/kubernetes-selenium-desktop/master/windows/delete-moon.bat
 C:\Users\user>delete-moon.bat
 
 ```
