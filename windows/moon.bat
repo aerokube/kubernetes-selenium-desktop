@@ -12,7 +12,7 @@ echo Downloading kubectl...
 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/windows/amd64/kubectl.exe
 
 echo Downloading minikube...
-curl -Lo minikube.exe https://github.com/kubernetes/minikube/releases/download/v1.4.0/minikube-windows-amd64.exe
+curl -Lo minikube.exe https://github.com/kubernetes/minikube/releases/download/v1.11.0/minikube-windows-amd64.exe
 
 echo Creating Virtual Switch...
 PowerShell -Command "New-VMSwitch -name MoonSwitch -NetAdapterName Ethernet -AllowManagementOS $true"
@@ -27,7 +27,7 @@ set ERRORLEVEL=
 echo.
 
 echo Starting Minikube...
-minikube start -p moon --vm-driver=hyperv --hyperv-virtual-switch=MoonSwitch --cpus=4 --memory=4096M
+minikube start -p moon --vm-driver=hyperv --hyperv-virtual-switch=MoonSwitch --kubernetes-version=v1.17.7 
 minikube -p moon addons enable ingress
 minikube -p moon addons enable metrics-server
 
